@@ -26,6 +26,8 @@
 #ifndef	COMMON_THREAD_MUTEX_POSIX_H
 #define	COMMON_THREAD_MUTEX_POSIX_H
 
+#include <cerrno>
+
 struct MutexState {
 	pthread_mutex_t mutex_;
 	pthread_mutexattr_t mutex_attr_;

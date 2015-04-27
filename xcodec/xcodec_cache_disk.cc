@@ -323,7 +323,7 @@ XCodecDisk::index_invalidate_entries(uint64_t index_block)
 		if (hash == 0)
 			continue;
 
-		std::map<uint16_t, XCodecDiskCache *>::const_iterator xcit;
+		std::map<uint16_t, XCodecDiskCache *>::iterator xcit;
 		xcit = xuid_cache_map_.find(xuid);
 		if (xcit == xuid_cache_map_.end())
 			continue;
